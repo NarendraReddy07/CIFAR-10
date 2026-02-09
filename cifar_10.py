@@ -95,7 +95,6 @@ model.summary()
 model.compile(optimizer='adam',  # Changed 'Compile' to 'compile'
               loss='sparse_categorical_crossentropy',  # Corrected loss function name
               metrics=['accuracy'])
-
 # Fit
 r = model.fit(
     x_train, y_train, validation_data=(x_test, y_test), epochs=5)
